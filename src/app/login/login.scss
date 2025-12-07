@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 30px;
+    background-color: #edecf3;
+}
+
+form {
+    width: 400px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px #299aad;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 70vh;
+    margin-top: 90px;
+    font-weight: bold;
+}
+
+form > div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: #299aad;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 160px;
+}
+label {
+    font-size: medium;
+    font-family: inherit;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    padding-left: 0;
+    text-align: left;
+    color: #299aad;
+}
+input{
+    width: 300px;
+    height: 30px;
+    margin-left: 40px;
+    border-radius: 6px;
+    border-style:ridge;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: none;
+    border-color: #299aad;
+    box-shadow: 0 0 5px #299aad;
+}
+.button {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 45px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #299aad;
+    color: #f3ecec;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    width: 300px;
+    margin: 0;
+    display: block;
+}
+
+button:hover {
+    background-color: #299aad;
+}
+
+button:active {
+    background-color: #e9edf0;
+    transform: translateY(2px);
+    color: #299aad;
+}
+h1{
+    color: #299aad;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}

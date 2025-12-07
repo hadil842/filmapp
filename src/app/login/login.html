@@ -1,0 +1,23 @@
+ <form action="/submit-form" method="post">
+        <h1>Login</h1>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Entrer votre nom" required />
+        </div>
+        
+        <div>
+            <label for="mail">E-mail</label>
+            <input type="email" id="mail" name="user_mail" placeholder="Entrer votre email" required />
+        </div>
+        
+        <div>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="user_password" placeholder="Entrer votre mot de passe" required />
+        </div>
+        <div>
+            <a (click)="gotosignin()">Sign up</a>
+        </div>
+        <div class="button">
+            <button type="submit">Login</button>
+        </div>
+    </form>
