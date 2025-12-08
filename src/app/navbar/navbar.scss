@@ -5,14 +5,19 @@ ul {
   margin-right: 7px;
   padding: 0;
   overflow: hidden;
-  background-color: #3d88c5;
-  border-radius: 30px;
+  background-color:black;
+  border-radius: 10px;
   height: 70px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight:lighter;
+  font-size:smaller;
+  margin-right: 80px;
+  margin-top: 10px;
 }
 
 ul li {
-  float: left;
+  float: right;
+  margin-left: 35px;
+
 }
 
 ul li a {
@@ -28,6 +33,6 @@ ul li a {
 
 ul li a:hover {
   background-color: rgb(211, 225, 236);
-  color: #3d88c5;
-  border-radius: 20px;
+  color: black;
+  border-radius: 80px;
 }

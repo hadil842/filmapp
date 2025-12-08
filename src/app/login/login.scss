@@ -5,16 +5,16 @@ body {
     min-height: 100vh;
     margin: 0;
     padding-top: 30px;
-    background-color: #edecf3;
+    background-color: rgb(211, 225, 236);
 }
 
 form {
     width: 400px;
     padding: 30px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px #299aad;
+    background-color: rgb(211, 225, 236);
+    box-shadow:none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 70vh;
     margin-top: 90px;
@@ -27,7 +27,7 @@ form > div {
     flex-direction: column;
 }
 a{
-    color: #299aad;
+    color: black;
     font-size: 20px;
     text-decoration: none;
     margin-left: 160px;
@@ -39,7 +39,7 @@ label {
     margin-left: 40px;
     padding-left: 0;
     text-align: left;
-    color: #299aad;
+    color: black;
 }
 input{
     width: 300px;
@@ -47,14 +47,15 @@ input{
     margin-left: 40px;
     border-radius: 6px;
     border-style:ridge;
+    background-color: rgb(211, 225, 236);
 }
 
 input:focus,
 select:focus,
 button:focus {
     outline: none;
-    border-color: #299aad;
-    box-shadow: 0 0 5px #299aad;
+    border-color: black;
+    box-shadow: 0 0 5px rgb(211, 225, 236);
 }
 .button {
     text-align: center;
@@ -64,8 +65,8 @@ button:focus {
 
 button {
     padding: 12px 25px;
-    background-color: #299aad;
-    color: #f3ecec;
+    background-color: black;
+    color: rgb(211, 225, 236);
     border: none;
     border-radius: 6px;
     font-size: 18px;
@@ -79,16 +80,15 @@ button {
 }
 
 button:hover {
-    background-color: #299aad;
+    background-color: black;
 }
 
 button:active {
     background-color: #e9edf0;
     transform: translateY(2px);
-    color: #299aad;
+    color: black;
 }
 h1{
-    color: #299aad;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
     text-align: center;
 }
