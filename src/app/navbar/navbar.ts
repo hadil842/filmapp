@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Router, RouterOutlet } from "@angular/router";
+import { Search } from "../search/search";
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Search],
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })
