@@ -1,91 +1,14 @@
-/*body {
-    background-color: #fceceb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    font-family: sans-serif;
-}
 
-h1 {
-    margin-left: 80vh;
-    margin-top: 100px;
-    color: rgb(211, 225, 236);
-    font-size: 40px;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-    width: 600px;
-    height: 50px;
-    border: 1px solid rgb(211, 225, 236);
-    border-radius: 25px;
-    background-color: rgb(211, 225, 236);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    margin-top: 103px;
-    margin-left: 60vh;
-}
-
-.search-input {
-    flex-grow: 1;
-    border: none;
-    padding: 0 15px 0 20px;
-    height: 100%;
-    font-size: 16px;
-    color: black;
-    background: transparent;
-    border-radius: 25px 0 0 25px;
-    outline: none;
-    box-sizing: border-box;
-    margin: 0;
-}
-
-.search-input:focus {
-    outline: none;
-}
-
-.search-input::placeholder {
-    color:black;
-}
-
-.search-container button {
-    width: 50px;
-    height: 100%;
-    border: none;
-    background-color: black;
-    color: rgb(211, 225, 236);
-    font-size: 20px;
-    border-radius: 0 25px 25px 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-    outline: none;
-    flex-shrink: 0;
-}
-
-.search-container button:hover {
-    background-color: black;
-}
-
-.search-container button:active {
-    transform: scale(0.98);
-}*/
 .main-photo{
     padding-top: var(--navbar-height); 
     height: 70vh; 
-    background-image:url("/assets/images/i3.png");
-    //var(--bg-dark)
-    background-size: cover;
+    background-image:url('/src/image/i2.png');
     background-position: center top;
     display: flex;
-    align-items: flex-end; /* Aligner le contenu en bas */
+    align-items: flex-end; 
     padding-left: 80px;
     position: relative;
-    /* Simulate l'image du personnage par-dessus */
+
 }
 
 .aa {
@@ -110,7 +33,6 @@ h1 {
 .main-body {
     margin-bottom: 20px;
     color: var(--text-gray);
-    /* Limiter la hauteur et le texte comme sur le mockup */
     height: 4.8em; 
     overflow: hidden; 
     color:#ffffff;
@@ -127,14 +49,18 @@ h1 {
 }
 .button{
     background-color: rgba(255, 255, 255, 0.1);
-    color: var(--text-light);
+    color:whitesmoke;
     border: 1px solid var(--text-gray);
+    height: 0px;
+    width: 90px;
+    border-radius: 20px;
+
 }
 
 .add-watchlist {
     display: block;
-    color: var(--text-gray);
     text-decoration: none;
     margin-top: 15px;
     font-size: 1.1em;
+    color: #ffffff;
 }

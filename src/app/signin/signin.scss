@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding-top: 30px;
-    background-color: rgb(211, 225, 236);
+    background-color: whitesmoke;
 }
 
 form {
@@ -13,7 +13,7 @@ form {
     padding: 30px;
     border: 1px solid black;
     border-radius: 8px;
-    background-color: rgb(211, 225, 236);
+    background-color: whitesmoke;
     box-shadow:none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 70vh;
@@ -47,7 +47,7 @@ input{
     margin-left: 40px;
     border-radius: 6px;
     border-style:ridge;
-    background-color: rgb(211, 225, 236);
+    background-color: whitesmoke;
 }
 
 input:focus,
@@ -55,7 +55,7 @@ select:focus,
 button:focus {
     outline: none;
     border-color: black;
-    box-shadow: 0 0 5px rgb(211, 225, 236);
+    box-shadow: 0 0 5px whitesmoke;
 }
 .button {
     text-align: center;
@@ -66,7 +66,7 @@ button:focus {
 button {
     padding: 12px 25px;
     background-color: black;
-    color: rgb(211, 225, 236);
+    color: whitesmoke;
     border: none;
     border-radius: 6px;
     font-size: 18px;
