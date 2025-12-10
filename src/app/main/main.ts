@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { Search } from "../search/search";
+import { Cartefilm } from "../cartefilm/cartefilm";
+import { Footer } from "../footer/footer";
 
 @Component({
   selector: 'app-main',
-  imports: [Search],
+  standalone: true,
+  imports: [Search, Cartefilm, Footer],
   templateUrl: './main.html',
   styleUrl: './main.scss',
 })

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie de films - Version améliorée</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Galerie de Films</h1>
+            <p class="subtitle">Découvrez notre sélection de films</p>
+        </header>
+        <div class="movies-grid">
+            <!-- Film 1 -->
+            <div class="movie-card" data-genres="action aventure">
+                <div class="movie-poster-container">
+                    <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Affiche Spider-Man" class="movie-poster">
+                    <div class="movie-badge">Nouveau</div>
+                </div>
+                <div class="movie-info">
+                    <div class="movie-header">
+                        <h3 class="movie-title">Spider-Man: Across the Spider-Verse</h3>
+                        <span class="movie-year">2023</span>
+                    </div>
+                    
+                    <div class="movie-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-value">8.7/10</span>
+                    </div>
+                    
+                    <div class="movie-genres">
+                        <span class="genre">Action</span>
+                        <span class="genre">Aventure</span>
+                        <span class="genre">Animation</span>
+                    </div>
+                    <div class="movie-duration">
+                        <i class="far fa-clock"></i>
+                        <span>2h 20min</span>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="action-btn favorite-btn" data-movie-id="1">
+                            <i class="far fa-heart"></i>
+                            <span class="btn-text">Favori</span>
+                        </button>
+                        <button class="action-btn info-btn" data-movie-id="1">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Détails</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    <!-- Film 2 -->
+    <div class="movie-card" data-genres="drame">
+                <div class="movie-poster-container">
+                    <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/05/oppenheimer-poster.jpg" alt="Affiche Oppenheimer" class="movie-poster">
+                </div>
+                <div class="movie-info">
+                    <div class="movie-header">
+                        <h3 class="movie-title">Oppenheimer</h3>
+                        <span class="movie-year">2023</span>
+                    </div>
+                    
+                    <div class="movie-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="rating-value">8.3/10</span>
+                    </div>
+                    
+                    <div class="movie-genres">
+                        <span class="genre">Drame</span>
+                        <span class="genre">Biopic</span>
+                        <span class="genre">Historique</span>
+                    </div>
+                    
+                    <div class="movie-duration">
+                        <i class="far fa-clock"></i>
+                        <span>3h 00min</span>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="action-btn favorite-btn" data-movie-id="1">
+                            <i class="far fa-heart"></i>
+                            <span class="btn-text">Favori</span>
+                        </button>
+                        <button class="action-btn info-btn" data-movie-id="1">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Détails</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    <!-- Film 3 -->
+    <div class="movie-card" data-genres="horreur comedie aventure">
+    <div class="movie-poster-container">
+        <img src="https://m.media-amazon.com/images/M/MV5BODg1NjNiMmQtNGFmZS00MWZkLWI1YzMtMWY4N2NmZjk5MTQwXkEyXkFqcGc%40._V1_.jpg" alt="Affiche Anaconda 2025" class="movie-poster">
+        <div class="movie-badge">Prochain</div>
+    </div>
+    <div class="movie-info">
+        <div class="movie-header">
+            <h3 class="movie-title">Anaconda</h3>
+            <span class="movie-year">2025</span>
+        </div>
+        <div class="movie-rating">
+            <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <span class="rating-value">7.5/10</span>
+        </div>
+        <div class="movie-genres">
+            <span class="genre">Horreur</span>
+            <span class="genre">Comédie</span>
+            <span class="genre">Aventure</span>
+        </div>
+        <div class="movie-actions">
+            <button class="action-btn favorite-btn" data-movie-id="3">
+                <i class="far fa-heart"></i><span class="btn-text">Favori</span>
+            </button>
+            <button class="action-btn info-btn" data-movie-id="3">
+                <i class="fas fa-info-circle"></i><span>Détails</span>
+            </button>
+        </div>
+    </div>
+</div>
+  <!-- Film 4 -->
+   <div class="movie-card" data-genres="drame historique">
+    <div class="movie-poster-container">
+        <img src="https://th.bing.com/th/id/R.33218254444f36d575a74a1910f8f357?rik=JNE5z8KXd%2fAQQA&riu=http%3a%2f%2fwww.impawards.com%2f2023%2fposters%2fkillers_of_the_flower_moon_ver3_xlg.jpg&ehk=DL0YdMXPIKEGuXHsaLGy8MH63GWz9cqV480LhmcXtWQ%3d&risl=&pid=ImgRaw&r=0" alt="Affiche Killers of the Flower Moon" class="movie-poster">
+    </div>
+    <div class="movie-info">
+        <div class="movie-header">
+            <h3 class="movie-title">Killers of the Flower Moon</h3>
+            <span class="movie-year">2023</span>
+        </div>
+        <div class="movie-rating">
+            <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="rating-value">8.1/10</span>
+        </div>
+        <div class="movie-genres">
+            <span class="genre">Drame</span>
+            <span class="genre">Historique</span>
+            <span class="genre">Crime</span>
+        </div>
+        <div class="movie-duration">
+            <i class="far fa-clock"></i>
+            <span>3h 00min</span>
+        </div>
+        <div class="movie-actions">
+            <button class="action-btn favorite-btn" data-movie-id="6">
+                <i class="far fa-heart"></i><span class="btn-text">Favori</span>
+            </button>
+            <button class="action-btn info-btn" data-movie-id="6">
+                <i class="fas fa-info-circle"></i><span>Détails</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <div class="movie-card" data-genres="science-fiction action">
+    <div class="movie-poster-container">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.73SG9-j2EMH3k-ekDwfqzwHaLH?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Affiche Avatar: The Way of Water" class="movie-poster">
+    </div>
+    <div class="movie-info">
+        <div class="movie-header">
+            <h3 class="movie-title">Avatar: The Way of Water</h3>
+            <span class="movie-year">2022</span>
+        </div>
+        <div class="movie-rating">
+            <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="rating-value">7.8/10</span>
+        </div>
+        <div class="movie-genres">
+            <span class="genre">Science-Fiction</span>
+            <span class="genre">Action</span>
+            <span class="genre">Aventure</span>
+        </div>
+        <div class="movie-duration">
+            <i class="far fa-clock"></i>
+            <span>3h 12min</span>
+        </div>
+        <div class="movie-actions">
+            <button class="action-btn favorite-btn" data-movie-id="7">
+                <i class="far fa-heart"></i><span class="btn-text">Favori</span>
+            </button>
+            <button class="action-btn info-btn" data-movie-id="7">
+                <i class="fas fa-info-circle"></i><span>Détails</span>
+            </button>
+        </div>
+    </div>
+</div>
+     
+<div class="movie-card" data-genres="thriller horreur">
+    <div class="movie-poster-container">
+        <img src="https://picfiles.alphacoders.com/449/thumb-1920-449186.jpg" alt="Affiche A Quiet Place Part II" class="movie-poster">
+    </div>
+    <div class="movie-info">
+        <div class="movie-header">
+            <h3 class="movie-title">A Quiet Place Part II</h3>
+            <span class="movie-year">2020</span>
+        </div>
+        <div class="movie-rating">
+            <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <span class="rating-value">7.3/10</span>
+        </div>
+        <div class="movie-genres">
+            <span class="genre">Thriller</span>
+            <span class="genre">Horreur</span>
+        </div>
+        <div class="movie-duration">
+            <i class="far fa-clock"></i>
+            <span>1h 37min</span>
+        </div>
+        <div class="movie-actions">
+            <button class="action-btn favorite-btn" data-movie-id="9">
+                <i class="far fa-heart"></i><span class="btn-text">Favori</span>
+            </button>
+            <button class="action-btn info-btn" data-movie-id="9">
+                <i class="fas fa-info-circle"></i><span>Détails</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="movie-card" data-genres="action aventure">
+    <div class="movie-poster-container">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.rnMklcBwV1xZl5ndF5sTSAHaK-?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Affiche Black Panther: Wakanda Forever" class="movie-poster">
+    </div>
+    <div class="movie-info">
+        <div class="movie-header">
+            <h3 class="movie-title">Black Panther: Wakanda Forever</h3>
+            <span class="movie-year">2022</span>
+        </div>
+        <div class="movie-rating">
+            <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <span class="rating-value">7.1/10</span>
+        </div>
+        <div class="movie-genres">
+            <span class="genre">Action</span>
+            <span class="genre">Aventure</span>
+            <span class="genre">Fantastique</span>
+        </div>
+        <div class="movie-duration">
+            <i class="far fa-clock"></i>
+            <span>2h 41min</span>
+        </div>
+        <div class="movie-actions">
+            <button class="action-btn favorite-btn" data-movie-id="10">
+                <i class="far fa-heart"></i><span class="btn-text">Favori</span>
+            </button>
+            <button class="action-btn info-btn" data-movie-id="10">
+                <i class="fas fa-info-circle"></i><span>Détails</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="movie-card" data-genres="aventure fantastique">
+    <div class="movie-poster-container">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.DJh9RnhsEmGKjlJwNSCsxwHaLH?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Affiche Fantastic Beasts: The Secrets of Dumbledore" class="movie-poster">
+    </div>
+    <div class="movie-info">
+        <div class="movie-header">
+            <h3 class="movie-title">Fantastic Beasts: The Secrets of Dumbledore</h3>
+            <span class="movie-year">2022</span>
+        </div>
+        <div class="movie-rating">
+            <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <span class="rating-value">6.3/10</span>
+        </div>
+        <div class="movie-genres">
+            <span class="genre">Aventure</span>
+            <span class="genre">Fantastique</span>
+        </div>
+        <div class="movie-duration">
+            <i class="far fa-clock"></i>
+            <span>2h 22min</span>
+        </div>
+        <div class="movie-actions">
+            <button class="action-btn favorite-btn" data-movie-id="13">
+                <i class="far fa-heart"></i><span class="btn-text">Favori</span>
+            </button>
+            <button class="action-btn info-btn" data-movie-id="13">
+                <i class="fas fa-info-circle"></i><span>Détails</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="movie-card" data-genres="action">
+                <div class="movie-poster-container">
+                    <img src="https://medialb.ultimedia.com/multi/3rpkx/q8skz8f-O.jpg" alt="Affiche John Wick" class="movie-poster">
+                    <div class="movie-badge">Tendance</div>
+                </div>
+                <div class="movie-info">
+                    <div class="movie-header">
+                        <h3 class="movie-title">John Wick 4</h3>
+                        <span class="movie-year">2023</span>
+                    </div>
+                    
+                    <div class="movie-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-value">8.0/10</span>
+                    </div>
+                    
+                    <div class="movie-genres">
+                        <span class="genre">Action</span>
+                        <span class="genre">Thriller</span>
+                        <span class="genre">Policier</span>
+                    </div>
+                    
+                    <div class="movie-duration">
+                        <i class="far fa-clock"></i>
+                        <span>2h 49min</span>
+                    </div>
+                    <div class="movie-actions">
+            <button class="action-btn favorite-btn" data-movie-id="13">
+                <i class="far fa-heart"></i><span class="btn-text">Favori</span>
+            </button>
+            <button class="action-btn info-btn" data-movie-id="13">
+                <i class="fas fa-info-circle"></i><span>Détails</span>
+            </button>
+        </div>
+                </div>
+            </div>
+        </div>
