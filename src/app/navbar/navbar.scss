@@ -79,3 +79,39 @@ nav ul li.login a:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-right: auto;
+}
+
+.logo i {
+    color: #ff0000;
+    font-size: 2rem;
+    transition: all 0.3s;
+}
+
+.logo-text {
+    background: linear-gradient(90deg, #fff, #aaa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-highlight {
+    color: #ff0000;
+    -webkit-text-fill-color: #ff0000;
+}
+
+.logo:hover i {
+    transform: rotate(15deg);
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
