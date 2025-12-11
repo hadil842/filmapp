@@ -1,15 +1,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <h1 >Quel genre de film voulez-vous explorer ?</h1>
+    <h1 >Votre Acteur</h1>
     <nav>
     <ul>
-        <li (click)="estactif('Action')">Action</li>
-        <li (click)="estactif('Comedy')" >Comedy</li>
-        <li (click)="estactif('Drama')">Drama</li>
-        <li (click)="estactif('Horror')">Horror</li>
-        <li (click)="estactif('Science Fiction')">Science Fiction</li>
+        <li (click)="estactif('Action')">?</li>
+        <li (click)="estactif('Tom Hanks')" >Tom Hanks</li>
+        <li (click)="estactif('Drama')"></li>
+        <li (click)="estactif('Horror')"></li>
+        <li (click)="estactif('Science Fiction')"></li>
     </ul></nav>
     <ul class="movies-grid">
-         <li class="movie-card" *ngFor="let film of MyMap.get(genreactif)" >
+         <li class="movie-card" *ngFor="let film of MyMap.get(acteuractif)" >
                 <!-- <div class="movie-poster-container">
                     <img class="movie-poster">
                 </div>-->
@@ -31,7 +31,7 @@
                     </div>
                     
                     <div class="movie-genres">
-                        <span class="genre">{{genreactif}}</span>
+                        <span class="genre">{{acteuractif}}</span>
                     </div>
                     <div class="movie-duration">
                         <i class="far fa-clock"></i>

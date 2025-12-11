@@ -34,10 +34,20 @@ export class Filmservice {
         this.dataMap.set("Horror", [
             { titre: "Late Night with the Devil", annee: "2023", note: "7.2/10", duree: "1h 33min" },
             { titre: "La Main (Talk to Me)", annee: "2023", note: "7.1/10", duree: "1h 35min" }
-        ]);}
+        ]);
+        this.ActeurMap.set("Tom Hanks", [
+            { titre: "Here", annee: "2024", note: "6.3/10", duree: "1h 44min" },
+            { titre: "Freaky Tales", annee: "2024", note: "6.3/10", duree: "1h 47min" }
+        ]);
+
+    }
     
    
     getall1():  Map<string, Filment[]> {
         return this.dataMap;
     }
+    getall2():Map<string,Filment[]>{
+        return this.ActeurMap;
+    }
+
 }

@@ -11,17 +11,20 @@
                 </a>
         </li>
         <li>
+                <a (click)="gotoacteur()">
+                    acteur
+                </a>
+        </li>
+        <li>
                 <a (click)="gotonews()">
                     Actualités 
                 </a>
         </li>
+        
         <li class="login" >
                 <a (click)="gotologin()">
                     login
                 </a>
-        </li>
-        <li style="margin-left: 600px;">
-            <app-search></app-search>
         </li>
     </ul>
     <router-outlet></router-outlet>

@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { Router, RouterOutlet } from "@angular/router";
-import { Search } from "../search/search";
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterOutlet, Search],
+  imports: [RouterOutlet],
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })
@@ -21,6 +20,9 @@ export class Navbar {
    }
    gotologin():void{
     this.router.navigate(['/login']);
+   }
+   gotoacteur():void{
+    this.router.navigate(['/acteur']);
    }
 
 }
