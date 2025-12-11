@@ -3,11 +3,11 @@
     <h2>Fan d’un acteur ? Choisissez-le et plongez dans ses meilleurs films !</h2>
     <nav>
     <ul>
-        <li (click)="estactif('Action')">
+        <li (click)="estactif('Henry Cavill')">
             <div class="container">
                 <div class="cards-grid">
                     <div class="actor-card">
-                        <img src="https://i.pinimg.com/736x/db/01/b4/db01b439c936b69cdd22ca5b886d64d6.jpg" alt="Alexandre Durand" class="card-image">
+                        <img src="https://i.pinimg.com/736x/db/01/b4/db01b439c936b69cdd22ca5b886d64d6.jpg"  class="card-image">
                     <div class="actor-name">
                     <h2>Henry Cavill</h2>
                     </div>
@@ -19,7 +19,7 @@
             <div class="container">
                 <div class="cards-grid">
                     <div class="actor-card">
-                        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/07/instar53352516.jpg" alt="Alexandre Durand" class="card-image">
+                        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/07/instar53352516.jpg"  class="card-image">
                     <div class="actor-name">
                     <h2>Tom Hanks</h2>
                     </div>
@@ -27,11 +27,11 @@
                 </div>
             </div>
         </li>
-        <li (click)="estactif('Drama')">
+        <li (click)="estactif('Jason Statham')">
             <div class="container">
                 <div class="cards-grid">
                     <div class="actor-card">
-                        <img src="https://es.web.img2.acsta.net/pictures/19/07/31/17/35/5396784.jpg" alt="Alexandre Durand" class="card-image">
+                        <img src="https://es.web.img2.acsta.net/pictures/19/07/31/17/35/5396784.jpg" class="card-image">
                     <div class="actor-name">
                     <h2>Jason Statham</h2>
                     </div>
@@ -39,8 +39,30 @@
                 </div>
             </div>
         </li>
-        <li (click)="estactif('Horror')"></li>
-        <li (click)="estactif('Science Fiction')"></li>
+        <li (click)="estactif('Kit Harington')">
+            <div class="container">
+                <div class="cards-grid">
+                    <div class="actor-card">
+                        <img src="https://es.web.img2.acsta.net/pictures/19/07/31/17/35/5396784.jpg"  class="card-image">
+                    <div class="actor-name">
+                    <h2>Kit Harington</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li (click)="estactif('Bill Skarsgård')">
+            <div class="container">
+                <div class="cards-grid">
+                    <div class="actor-card">
+                        <img src="https://es.web.img2.acsta.net/pictures/19/07/31/17/35/5396784.jpg"  class="card-image">
+                    <div class="actor-name">
+                    <h2>Bill Skarsgård</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </li>
     </ul></nav>
     <ul class="movies-grid">
          <li class="movie-card" *ngFor="let film of MyMap.get(acteuractif)" >
