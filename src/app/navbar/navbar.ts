@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, RouterOutlet } from "@angular/router";
+import { User } from '../userservice';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,9 @@ import { Router, RouterOutlet } from "@angular/router";
   styleUrl: './navbar.scss',
 })
 export class Navbar {
-   constructor(private router:Router){}
+   nom:string="Login";
+   constructor(private router:Router){
+   }
    gotomain():void{
     this.router.navigate(['/main']);
    }
@@ -20,6 +23,7 @@ export class Navbar {
    }
    gotologin():void{
     this.router.navigate(['/login']);
+    this.nom="Bonjour";
    }
    gotoacteur():void{
     this.router.navigate(['/acteur']);

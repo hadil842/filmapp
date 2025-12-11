@@ -38,30 +38,49 @@
                     <i class="fas fa-trash-alt"></i> Tout supprimer
                 </button>
             </div>
-
-
-            <div class="movie-card">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMzU0MjY5MjctYjJkMS00YmRjLWEwZmUtN2Q2YmI3NGFkMGI1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_FMjpg_UX1000_.jpg" alt="Mission Impossible" class="movie-poster">
-                    <div class="movie-info">
-                        <h4>Mission: Impossible 7</h4>
-                        <div class="movie-meta">
-                            <span class="movie-year">2023</span>
-                            <div class="movie-rating">
-                                <i class="fas fa-star"></i>
-                                <span>8.1/10</span>
-                            </div>
+     </section>  
+    </div>     
+    </div>                
+<ul class="movies-grid">
+         <li class="movie-card" *ngFor="let film of favfilm" >
+                <div class="movie-info">
+                    <div class="movie-header">
+                        <h3 class="movie-title">{{film.titre}}</h3>
+                        <span class="movie-year">{{film.annee}}</span>
+                    </div>
+                    
+                    <div class="movie-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <div class="movie-actions">
-                            <button class="remove-btn" onclick="removeMovie(this)">
-                                <i class="fas fa-times"></i> Retirer
-                            </button>
-                            <button class="watch-btn">
-                                <i class="fas fa-play"></i> Regarder
-                            </button>
-                        </div>
+                        <span class="rating-value">{{film.note}}</span>
+                    </div>
+                    
+                    <div class="movie-genres">
+                        <span class="genre">"Action"</span>
+                    </div>
+                    <div class="movie-duration">
+                        <i class="far fa-clock"></i>
+                        <span >{{film.duree}}</span>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="action-btn favorite-btn" data-movie-id="1">
+                            <i class="far fa-heart"></i>
+                            <span class="btn-text">Favori</span>
+                        </button>
+                        <button class="action-btn info-btn" data-movie-id="1">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Détails</span>
+                        </button>
                     </div>
                 </div>
-
+            </li>
+        </ul>
+<app-footer></app-footer>
 
 
 
