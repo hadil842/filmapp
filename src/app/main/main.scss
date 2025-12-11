@@ -1,14 +1,12 @@
 .main-photo {
     width: 100%;
     height: 85vh;
-    min-height: 600px;//600
-    //background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
-            //url(https://images.wallpapersden.com/image/download/jumanji-3_a2xoZWeUmZqaraWkpJRmaGtlrWxrbQ.jpg);
+    min-height: 600px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
                       url(https://m.media-amazon.com/images/M/MV5BODg1NjNiMmQtNGFmZS00MWZkLWI1YzMtMWY4N2NmZjk5MTQwXkEyXkFqcGc%40._V1_.jpg);    
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Effet parallaxe */
+    background-attachment: fixed; 
     display: flex;
     align-items: center;
     padding: 0 8%;
@@ -33,19 +31,6 @@
     line-height: 1.1;
 }
 
-/* Effet lumineux sur le titre */
-/*.main-title::after {
-    content: '';
-    display: block;
-    width: 120px;
-    height: 6px;
-    background: linear-gradient(90deg, #e50914, #ff6b6b);
-    margin-top: 10px;
-    border-radius: 3px;
-    box-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
-}
-*/
-/* Date et genres - Style cohérent avec les cartes */
 .main-title2 {
     font-size: 1.8rem;//1.3
     color: #ddd;
@@ -60,8 +45,6 @@
     content: '🎬';
     font-size: 1.5rem;
 }
-
-/* Description - Typographie lisible */
 .main-body {
     font-size: 1.25rem;
     line-height: 1.7;
@@ -81,8 +64,6 @@
     padding-left: 20px;
     border-left: 3px solid #e50914;
 }
-
-/* Bouton - Style cohérent avec les cartes */
 .btn {
     display: inline-block;
     margin-right: 20px;
@@ -109,8 +90,6 @@
     box-shadow: 0 8px 25px rgba(229, 9, 20, 0.6);
     background: linear-gradient(135deg, #ff0a16, #d10811);
 }
-
-/* Lien Watchlist - Style cohérent */
 .add-watchlist {
     display: inline-flex;
     align-items: center;
@@ -138,7 +117,6 @@
     font-size: 1.2rem;
 }
 
-/* Animation d'apparition */
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -153,8 +131,6 @@
 .aa {
     animation: slideIn 1s ease-out;
 }
-
-/* Responsive */
 @media (max-width: 1024px) {
     .main-photo {
         height: 75vh;
@@ -174,7 +150,7 @@
     .main-photo {
         height: 70vh;
         min-height: 500px;
-        background-attachment: scroll; /* Désactiver l'effet parallaxe sur mobile */
+        background-attachment: scroll; 
         justify-content: center;
         text-align: center;
     }
@@ -245,8 +221,6 @@
         font-size: 1rem;
     }
 }
-
-/* Pour les très grands écrans */
 @media (min-width: 1600px) {
     .main-photo {
         height: 90vh;

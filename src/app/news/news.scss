@@ -1,44 +1,6 @@
 nav {
     margin-top: 120px;
 }
-
-/*nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #1C1C1C;
-  border-radius: 25px;
-  border: 2px solid #555;
-  height: 100px;
-  width: 1300px;
-  margin-top: 20px;
-  margin-left: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; 
-  padding: 0 20px;
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #FFFFFF;
-  background-color: #3C3C3C;
-}
-nav ul:hover {
-  background-color: #5A5A5A;
-  border-color:whitesmoke;
-  box-shadow: none;
-  transform: translateX(-0.5px) scale(1.02);
-}
-h1 {
-    font-size: 2.8rem;
-    color: #e50914;
-    margin-bottom: 10px;
-    text-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}*/
 * {
             margin: 0;
             padding: 0;
@@ -67,7 +29,7 @@ h1 {
         h1 {
             font-size: 2.8rem;
             color: #e50914;
-            margin-bottom: 15px;
+            margin-bottom: 110px;
             text-align: center;
             text-shadow: 0 0 10px rgba(229, 9, 20, 0.3);
         }
@@ -83,6 +45,7 @@ h1 {
             grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
             gap: 30px;
             margin-bottom: 60px;
+            margin-left: 93px;
         }
         
         .news-card {

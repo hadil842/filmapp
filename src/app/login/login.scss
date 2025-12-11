@@ -1,20 +1,11 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    margin: 0;
-    padding-top: 30px;
-    background-color: whitesmoke;
-}
+
 
 form {
     width: 400px;
     padding: 30px;
-    border: 1px solid black;
-    border-radius: 8px;
-    background-color: whitesmoke;
-    box-shadow:none;
+    border: 1px solid gray;
+    border-radius: 13px;
+    background-color:#1C1C1C;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 70vh;
     margin-top: 90px;
@@ -27,7 +18,7 @@ form > div {
     flex-direction: column;
 }
 a{
-    color: black;
+    color: whitesmoke;
     font-size: 20px;
     text-decoration: none;
     margin-left: 160px;
@@ -39,14 +30,14 @@ label {
     margin-left: 40px;
     padding-left: 0;
     text-align: left;
-    color: black;
+    color: whitesmoke;
 }
 input{
     width: 300px;
-    height: 30px;
+    height: 50px;
     margin-left: 40px;
     border-radius: 6px;
-    border-style:ridge;
+    border-style:none;
     background-color: whitesmoke;
 }
 
@@ -54,7 +45,7 @@ input:focus,
 select:focus,
 button:focus {
     outline: none;
-    border-color: black;
+    border-color: gray;
     box-shadow: 0 0 5px whitesmoke;
 }
 .button {
@@ -65,8 +56,8 @@ button:focus {
 
 button {
     padding: 12px 25px;
-    background-color: black;
-    color: whitesmoke;
+    background-color:whitesmoke;
+    color: black;
     border: none;
     border-radius: 6px;
     font-size: 18px;
@@ -80,15 +71,15 @@ button {
 }
 
 button:hover {
-    background-color: black;
+    background-color: whitesmoke;
 }
 
 button:active {
-    background-color: #e9edf0;
+    background-color: black;
     transform: translateY(2px);
     color: black;
 }
 h1{
-    color:black;
+    color:whitesmoke;
     text-align: center;
 } 
