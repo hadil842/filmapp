@@ -11,7 +11,7 @@ import { Footer } from "../footer/footer";
 export class Film implements OnInit{
       genreactif:string ="";
       ngOnInit(): void {
-         this.MyMap=this.filmservice.getall();
+         this.MyMap=this.filmservice.getall1();
       }
       constructor(private filmservice:Filmservice){}
       MyMap =new Map<string,Filment[]>();

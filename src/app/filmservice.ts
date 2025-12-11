@@ -10,6 +10,7 @@ export interface Filment {
 })
 export class Filmservice {
     dataMap = new Map<string, Filment[]>();
+    ActeurMap=new Map<string,Filment[]>();
     constructor(){
         this.dataMap.set("Action", [
             { titre: "Dune - Deuxième partie", annee: "2024", note: "8.6/10", duree: "2h" },
@@ -36,7 +37,7 @@ export class Filmservice {
         ]);}
     
    
-    getall():  Map<string, Filment[]> {
+    getall1():  Map<string, Filment[]> {
         return this.dataMap;
     }
 }
