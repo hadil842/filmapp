@@ -21,6 +21,6 @@ export class User {
       this.favfilm = this.favfilm.filter(film => film.titre !== item);
     }
     supprimertout():void{
-       this.favfilm=[];
+       this.favfilm.splice(0,this.favfilm.length);
     }
 }
