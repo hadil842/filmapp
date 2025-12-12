@@ -1,0 +1,110 @@
+<div class="film-hero" [style.backgroundImage]="'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url(' + film.backdrop + ')'">
+  <div class="hero-content">
+    <div class="film-poster-container">
+      <img [src]="film.image" [alt]="film.title" class="film-poster">
+    </div>
+    
+    <div class="film-hero-info">
+      <h1 class="film-title">{{ film.title }}</h1>
+      <h3 class="film-original-title">{{ film.originalTitle }}</h3>
+      
+      <div class="film-meta">
+        <span class="meta-item">
+          <i class="fas fa-calendar"></i> {{ film.year }}
+        </span>
+        <span class="meta-item">
+          <i class="far fa-clock"></i> {{ film.duration }}
+        </span>
+        <span class="meta-item rating">
+          <i class="fas fa-star"></i> {{ film.rating }}/10
+        </span>
+        <span class="meta-item">
+          <i class="fas fa-user-friends"></i> {{ film.votes }} votes
+        </span>
+      </div>
+      
+      <div class="genres">
+        @for (genre of film.genres; track genre) {
+          <span class="genre-tag">{{ genre }}</span>
+        }
+
+      </div>
+      
+      <div class="hero-actions">
+        <button class="btn btn-favorite" (click)="addToFavorites()">
+          <i class="fas fa-heart"></i> Ajouter aux favoris
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="film-container">
+ 
+  <section class="section synopsis-section">
+    <h2 class="section-title"><i class="fas fa-file-alt"></i> Synopsis</h2>
+    <p class="synopsis-text">{{ film.synopsis }}</p>
+  </section>
+
+  
+  <div class="info-grid">
+    <section class="section technical-section">
+      <h2 class="section-title"><i class="fas fa-info-circle"></i> Informations</h2>
+      <div class="info-list">
+        <div class="info-item">
+          <strong><i class="fas fa-user-tie"></i> Réalisateur:</strong>
+          <span>{{ film.director }}</span>
+        </div>
+        <div class="info-item">
+          <strong><i class="fas fa-pen"></i> Scénaristes:</strong>
+          <span>{{ film.writers.join(', ') }}</span>
+        </div>
+        <div class="info-item">
+          <strong><i class="fas fa-globe"></i> Pays:</strong>
+          <span>{{ film.country }}</span>
+        </div>
+        <div class="info-item">
+          <strong><i class="fas fa-language"></i> Langue:</strong>
+          <span>{{ film.language }}</span>
+        </div>
+        <div class="info-item">
+          <strong><i class="fas fa-calendar-day"></i> Date de sortie:</strong>
+          <span>{{ film.releaseDate }}</span>
+        </div>
+        <div class="info-item">
+          <strong><i class="fas fa-film"></i> Production:</strong>
+          <span>{{ film.production }}</span>
+        </div>
+        <div class="info-item">
+          <strong><i class="fas fa-money-bill-wave"></i> Budget:</strong>
+          <span>{{ film.budget }}</span>
+        </div>
+        <div class="info-item">
+          <strong><i class="fas fa-chart-line"></i> Box Office:</strong>
+          <span>{{ film.boxOffice }}</span>
+        </div>
+        <div class="info-item">
+          <strong><i class="fas fa-award"></i> Récompenses:</strong>
+          <span>{{ film.awards }}</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cast-section">
+      <h2 class="section-title"><i class="fas fa-users"></i> Distribution</h2>
+      <div class="cast-grid">
+        @for (actor of film.cast; track actor.name) {
+          <div class="actor-card">
+            <div class="actor-image">
+              <img [src]="actor.image" [alt]="actor.name">
+            </div>
+            <div class="actor-info">
+              <h4>{{ actor.name }}</h4>
+              <p class="character">{{ actor.character }}</p>
+            </div>
+          </div>
+        }
+
+      </div>
+    </section>
+  </div>
