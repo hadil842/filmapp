@@ -15,9 +15,13 @@ export class Useraccount implements OnInit{
       favfilm:Filment[]=[];
       constructor(private userservice:User){}
       ngOnInit(): void {
-       this.favfilm=this.userservice.getall();
+       this.favfilm=this.userservice.getall();}
+      supprimer(item:string):void{
+        this.userservice.supprimerelt(item);
+        this.favfilm=this.userservice.getall();
+      }
+      supprimertout():void{
+        this.userservice.supprimertout();
+        this.favfilm=[];
+      }
   }
-      
-
-
-}

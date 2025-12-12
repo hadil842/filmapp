@@ -249,13 +249,12 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     transition: all 0.4s ease;
     cursor: pointer;
-    height: 420px;
+    height: fit-content;
     display: flex;
-    flex-direction: column;
     animation: fadeInUp 0.5s ease-out;
     width:400px; 
     margin: 10px;
-    display: inline-block;
+
 }
 .movie-card:hover {
     transform: translateY(-10px);

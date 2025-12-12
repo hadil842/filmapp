@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Filment } from './filmservice';
+import { Film } from './film/film';
 
 @Injectable({
   providedIn: 'root',
@@ -15,5 +16,11 @@ export class User {
     }
     getall():Filment[]{
       return this.favfilm;
+    }
+    supprimerelt(item:string):void{
+      this.favfilm = this.favfilm.filter(film => film.titre !== item);
+    }
+    supprimertout():void{
+       this.favfilm=[];
     }
 }
