@@ -71,7 +71,49 @@ export class Filmservice {
             { titre: "Mémoires de jeunesse", annee: "2015", note: "7.3/10", duree: "2h 9min" },
             { titre: "Brimstone", annee: "2017", note: "7.1/10", duree: "2h 28min" }
         ]);
-
+        this.ActeurMap.set("Jason Statham",[
+            {titre: "The Beekeeper", annee: "2024", note: "6.8/10", duree: "1h 45min"},
+            {titre: "Operation Fortune: Ruse de guerre", annee: "2023", note: "6.3/10", duree: "1h 54min"},
+            {titre: "En eaux très troubles", annee: "2023", note: "5.0/10", duree: "1h 56min"},
+            {titre: "Fast & Furious X", annee: "2023", note: "5.8/10", duree: "2h 21min"},
+{titre: "Un homme en colère", annee: "2021", note: "7.1/10", duree: "1h 59min"},
+{titre: "Fast & Furious: Hobbs & Shaw", annee: "2019", note: "6.5/10", duree: "2h 17min"},
+{titre: "En eaux troubles", annee: "2018", note: "5.6/10", duree: "1h 53min"},
+{titre: "Mechanic: Résurrection", annee: "2016", note: "5.7/10", duree: "1h 38min"},
+        ])
+        this.ActeurMap.set("Henry Cavill",[
+            {titre: "Le Ministère de la Sale Guerre", annee: "2024", note: "7.4/10", duree: "2h 00min"},
+            {titre: "Argylle", annee: "2024", note: "5.8/10", duree: "2h 19min"},
+            {titre: "Enola Holmes 2", annee: "2022", note: "6.7/10", duree: "2h 09min"},
+            {titre: "Zack Snyder's Justice League", annee: "2021", note: "7.9/10", duree: "4h 02min"},
+            {titre: "Enola Holmes", annee: "2020", note: "6.6/10", duree: "2h 03min"},
+            {titre: "Mission: Impossible - Fallout", annee: "2018", note: "7.7/10", duree: "2h 27min"},
+            {titre: "Justice League", annee: "2017", note: "6.1/10", duree: "2h 00min"},
+            {titre: "Batman v Superman : L'Aube de la Justice", annee: "2016", note: "6.0/10", duree: "2h 33min"},
+        ])
+        this.ActeurMap.set("Bill Skarsgård",[{ titre: "Nosferatu", annee: "2024", note: "6.3/10", duree: "2h 12min" },
+{ titre: "The Crow", annee: "2024", note: "5.6/10", duree: "1h 51min" },
+{ titre: "John Wick : Chapitre 4", annee: "2023", note: "6.5/10", duree: "2h 49min" },
+{ titre: "Boy Kills World", annee: "2023", note: "5.6/10", duree: "1h 55min" },
+{ titre: "Barbare", annee: "2022", note: "6.5/10", duree: "1h 42min" },
+{ titre: "Les Éternels", annee: "2021", note: "5.7/10", duree: "2h 37min" },
+{ titre: "Le Diable, tout le temps" , annee: "2020", note: "6.6/10", duree: "2h 18min" },
+{ titre: "Ça : Chapitre 2" , annee: "2019", note: "5.5/10", duree: "2h 49min" }])
+       this.ActeurMap.set("Florence Pugh",[{ titre: "Dune : Deuxième Partie", annee: "2024", note: "8.3/10", duree: "2h 46min" },
+     { titre: "Oppenheimer", annee: "2023", note: "8.4/10", duree: "3h 00min" },
+    { titre: "A Good Person", annee: "2023", note: "7.1/10", duree: "2h 08min" },
+    { titre: "Don't Worry Darling", annee: "2022", note: "6.3/10", duree: "2h 02min" },
+   { titre: "Le Chat Potté 2 : La Dernière Quête" , annee: "2022", note: "7.8/10", duree: "1h 40min" },
+   { titre: "Black Widow", annee: "2021", note: "6.7/10", duree: "2h 14min" },
+   { titre: "Les Filles du Docteur March", annee: "2019", note: "7.8/10", duree: "2h 15min" },
+   { titre: "Midsommar", annee: "2019", note: "7.1/10", duree: "2h 28min" }])
+   this.ActeurMap.set("Jennifer Lawrence",[{ titre: "Happiness Therapy", annee: "2012", note: "7.7/10", duree: "2h 02min" },
+   { titre: "Winter's Bone", annee: "2010", note: "7.2/10", duree: "1h 40min" },
+   { titre: "Hunger Games : L'Embrasement", annee: "2013", note: "7.5/10", duree: "2h 26min" },
+   { titre: "American Bluff", annee: "2013", note: "7.2/10", duree: "2h 18min" },
+  {titre: "Don't Look Up : Déni cosmique", annee: "2021", note: "7.2/10", duree: "2h 18min" },
+  { titre: "Red Sparrow", annee: "2018", note: "6.6/10", duree: "2h 20min" },
+  { titre: "Joy", annee: "2015", note: "6.6/10", duree: "2h 04min" },{ titre: "X-Men: Days of Future Past", annee: "2014", note: "7.9/10", duree: "2h 12min" },])
     }
     
    
